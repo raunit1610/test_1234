@@ -1,6 +1,7 @@
 version: 2
 models:
   - name: STG_RAW_PLAYER
+    enabled: true
     description: ""
     columns:
       - name: playerid
@@ -23,6 +24,7 @@ models:
         data_type: timestamp_ntz
         description: ""
   - name: STG_RAW_PLAYERSEASON
+    enabled: true
     description: ""
     columns:
       - name: playerid
@@ -44,6 +46,7 @@ models:
         data_type: timestamp_ntz
         description: ""
   - name: STG_RAW_BATTINGCARD
+    enabled: true
     description: ""
     columns:
       - name: matchid
@@ -92,6 +95,7 @@ models:
         data_type: timestamp_ntz
         description: ""
   - name: STG_RAW_BOWLINGCARD
+    enabled: true
     description: ""
     columns:
       - name: matchid
@@ -140,6 +144,7 @@ models:
         data_type: timestamp_ntz
         description: ""
   - name: STG_RAW_TEAM
+    enabled: true
     description: ""
     columns:
       - name: teamid
