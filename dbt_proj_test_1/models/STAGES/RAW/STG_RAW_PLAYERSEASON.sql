@@ -19,8 +19,8 @@ deduped AS (
     SELECT
         PLAYERID,
         TEAMID,
-        ANY_VALUE(abc),
-        ANY_VALUE(xyz),
+        ANY_VALUE(abc) AS ABC,
+        ANY_VALUE(xyz) AS XYZ,
         ANY_VALUE(SEASON) AS SEASON,
         ANY_VALUE(FILENAME) AS FILENAME,
         ANY_VALUE(LOAD_TIMESTAMP) AS LOAD_TIMESTAMP,
