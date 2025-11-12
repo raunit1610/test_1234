@@ -2141,3 +2141,612 @@ There are 1 unused configuration paths:
 [0m18:31:37.012853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002271435FEE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022714573C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022714573BB0>]}
 [0m18:31:37.013100 [debug] [MainThread]: Flushing usage events
 [0m18:31:40.363069 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:37:16.086591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001927733CD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019277DE56D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001927844FED0>]}
+
+
+============================== 18:37:16.096182 | 1e786782-92fd-4ca9-9b9d-f0a072acf42b ==============================
+[0m18:37:16.096182 [info ] [MainThread]: Running with dbt=1.11.0-b4
+[0m18:37:16.097550 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\VS Code\\DBT_TEST', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'False', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'C:\\VS Code\\DBT_TEST\\logs', 'introspect': 'True', 'no_print': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'use_experimental_parser': 'False'}
+[0m18:37:16.710201 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:37:16.710558 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:37:16.711038 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:37:16.847732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192777A5CD0>]}
+[0m18:37:16.891541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019212A64F30>]}
+[0m18:37:16.892521 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m18:37:17.134818 [debug] [MainThread]: checksum: 57e51233fb2305050a86c940b93938a4d3a51a7b95f45f76840a20ffa12695aa, vars: {}, profile: , target: , version: 1.11.0b4
+[0m18:37:17.290203 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:37:17.290535 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:37:17.294848 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_proj_test_1.example
+[0m18:37:17.340307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019212E34B50>]}
+[0m18:37:17.425817 [debug] [MainThread]: Wrote artifact WritableManifest to C:\VS Code\DBT_TEST\target\manifest.json
+[0m18:37:17.428449 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\VS Code\DBT_TEST\target\semantic_manifest.json
+[0m18:37:17.447488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019212BE9D60>]}
+[0m18:37:17.447872 [info ] [MainThread]: Found 10 models, 1 snapshot, 3 data tests, 4 seeds, 9 sources, 633 macros
+[0m18:37:17.448590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019213113850>]}
+[0m18:37:17.450371 [info ] [MainThread]: 
+[0m18:37:17.451135 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:37:17.451698 [info ] [MainThread]: 
+[0m18:37:17.452527 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m18:37:17.456639 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAUNIT_T20_DBT'
+[0m18:37:17.530642 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT"
+[0m18:37:17.530957 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT: show terse schemas in database RAUNIT_T20_DBT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT"} */
+[0m18:37:17.531158 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:37:18.500564 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.969 seconds
+[0m18:37:18.510428 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM'
+[0m18:37:18.542319 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM"
+[0m18:37:18.543428 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM: show objects in RAUNIT_T20_DBT.T20_DATA_TRANSFORM
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM"} */;
+[0m18:37:18.544202 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:37:19.392956 [debug] [ThreadPool]: SQL status: SUCCESS 14 in 0.849 seconds
+[0m18:37:19.397295 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM, now list_RAUNIT_T20_DBT_SNAPSHOTS)
+[0m18:37:19.403648 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT_SNAPSHOTS"
+[0m18:37:19.404219 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT_SNAPSHOTS: show objects in RAUNIT_T20_DBT.SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT_SNAPSHOTS"} */;
+[0m18:37:19.555826 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.151 seconds
+[0m18:37:19.560926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192131CBC70>]}
+[0m18:37:19.571237 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD
+[0m18:37:19.572201 [info ] [Thread-1 (]: 1 of 10 START sql incremental model T20_DATA_TRANSFORM.STG_RAW_BATTINGCARD ..... [RUN]
+[0m18:37:19.573757 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD'
+[0m18:37:19.574537 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD
+[0m18:37:19.610649 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"
+[0m18:37:19.611098 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD: describe table RAUNIT_T20_DBT.T20_RAW.BATTINGSCORECARD
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"} */
+[0m18:37:19.611407 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:37:20.513030 [debug] [Thread-1 (]: SQL status: SUCCESS 14 in 0.901 seconds
+[0m18:37:20.519928 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"
+[0m18:37:20.521759 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD
+[0m18:37:20.573731 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"
+[0m18:37:20.578546 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"
+[0m18:37:20.578900 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD: create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BATTINGCARD
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT 
+        "MATCHID",
+  "INNINGID",
+  "PLAYORDER",
+  "BATSMANID",
+  "DISMISSALTYPEID",
+  "BOWLERID",
+  "FIELDERID",
+  "RUNS",
+  "BALLS",
+  "BOUNDERIES",
+  "SIXES",
+  "DOTSBALLS",
+  "FILENAME",
+  "LOAD_TIMESTAMP",
+        CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS _inserted_at_
+    FROM RAUNIT_T20_DBT.T20_RAW.BATTINGSCORECARD
+)
+
+SELECT *
+FROM source_data
+
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"} */;
+[0m18:37:22.846040 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.267 seconds
+[0m18:37:22.864897 [debug] [Thread-1 (]: Applying DROP to: RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BATTINGCARD__dbt_tmp
+[0m18:37:22.873502 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"
+[0m18:37:22.873925 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD: drop view if exists RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BATTINGCARD__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"} */
+[0m18:37:23.043774 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.169 seconds
+[0m18:37:23.074279 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001921379D190>]}
+[0m18:37:23.074796 [info ] [Thread-1 (]: 1 of 10 OK created sql incremental model T20_DATA_TRANSFORM.STG_RAW_BATTINGCARD  [[32mSUCCESS 1[0m in 3.50s]
+[0m18:37:23.075722 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD
+[0m18:37:23.076008 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD
+[0m18:37:23.076332 [info ] [Thread-1 (]: 2 of 10 START sql incremental model T20_DATA_TRANSFORM.STG_RAW_BOWLINGCARD ..... [RUN]
+[0m18:37:23.076886 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD)
+[0m18:37:23.077140 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD
+[0m18:37:23.085611 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"
+[0m18:37:23.086344 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD: describe table RAUNIT_T20_DBT.T20_RAW.BOWLINGSCORECARD
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"} */
+[0m18:37:23.229860 [debug] [Thread-1 (]: SQL status: SUCCESS 14 in 0.143 seconds
+[0m18:37:23.234394 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"
+[0m18:37:23.237155 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD
+[0m18:37:23.242016 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"
+[0m18:37:23.245335 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"
+[0m18:37:23.245976 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD: create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BOWLINGCARD
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT 
+        "MATCHID",
+  "INNINGID",
+  "BOWLERID",
+  "BALLSBOWLED",
+  "MAIDENS",
+  "DOTBALLS",
+  "RUNSGIVEN",
+  "BOUNDERIESCONCEDED",
+  "SIXESCONCEDED",
+  "NOBALLS",
+  "WIDES",
+  "WICKETSTAKEN",
+  "FILENAME",
+  "LOAD_TIMESTAMP",
+        CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS _inserted_at_
+    FROM RAUNIT_T20_DBT.T20_RAW.BOWLINGSCORECARD
+)
+
+SELECT *
+FROM source_data
+
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"} */;
+[0m18:37:24.123778 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.877 seconds
+[0m18:37:24.126932 [debug] [Thread-1 (]: Applying DROP to: RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BOWLINGCARD__dbt_tmp
+[0m18:37:24.127679 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"
+[0m18:37:24.127987 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD: drop view if exists RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BOWLINGCARD__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"} */
+[0m18:37:24.282905 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.154 seconds
+[0m18:37:24.286155 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192138DC520>]}
+[0m18:37:24.287084 [info ] [Thread-1 (]: 2 of 10 OK created sql incremental model T20_DATA_TRANSFORM.STG_RAW_BOWLINGCARD  [[32mSUCCESS 1[0m in 1.21s]
+[0m18:37:24.288753 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD
+[0m18:37:24.289417 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER
+[0m18:37:24.290126 [info ] [Thread-1 (]: 3 of 10 START sql incremental model T20_DATA_TRANSFORM.STG_RAW_PLAYER .......... [RUN]
+[0m18:37:24.291245 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER)
+[0m18:37:24.291833 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER
+[0m18:37:24.299462 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"
+[0m18:37:24.300180 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER: describe table RAUNIT_T20_DBT.T20_RAW.PLAYER
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"} */
+[0m18:37:25.020305 [debug] [Thread-1 (]: SQL status: SUCCESS 4 in 0.719 seconds
+[0m18:37:25.023554 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"
+[0m18:37:25.026711 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER
+[0m18:37:25.031163 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"
+[0m18:37:25.037624 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"
+[0m18:37:25.038459 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER: create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYER
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT
+        "PLAYERID",
+  "PLAYERNAME",
+  "FILENAME",
+  "LOAD_TIMESTAMP",
+        CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS _inserted_at_
+    FROM RAUNIT_T20_DBT.T20_RAW.PLAYER
+),
+
+deduped AS (
+    SELECT
+        PLAYERID,
+        ANY_VALUE(PLAYERNAME) AS PLAYERNAME,
+        ANY_VALUE(FILENAME) AS FILENAME,
+        ANY_VALUE(LOAD_TIMESTAMP) AS LOAD_TIMESTAMP,
+        MAX(_inserted_at_) AS _inserted_at_
+    FROM source_data
+    GROUP BY PLAYERID
+)
+
+SELECT *
+FROM deduped
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"} */;
+[0m18:37:25.725999 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.687 seconds
+[0m18:37:25.730057 [debug] [Thread-1 (]: Applying DROP to: RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYER__dbt_tmp
+[0m18:37:25.730585 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"
+[0m18:37:25.730820 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER: drop view if exists RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYER__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"} */
+[0m18:37:25.880205 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.149 seconds
+[0m18:37:25.884339 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192138B2FD0>]}
+[0m18:37:25.885851 [info ] [Thread-1 (]: 3 of 10 OK created sql incremental model T20_DATA_TRANSFORM.STG_RAW_PLAYER ..... [[32mSUCCESS 1[0m in 1.59s]
+[0m18:37:25.888097 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER
+[0m18:37:25.889103 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON
+[0m18:37:25.890102 [info ] [Thread-1 (]: 4 of 10 START sql incremental model T20_DATA_TRANSFORM.STG_RAW_PLAYERSEASON .... [RUN]
+[0m18:37:25.891914 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON)
+[0m18:37:25.892805 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON
+[0m18:37:25.906678 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"
+[0m18:37:25.908662 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON: describe table RAUNIT_T20_DBT.T20_RAW.PLAYERSEASON
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"} */
+[0m18:37:26.052856 [debug] [Thread-1 (]: SQL status: SUCCESS 5 in 0.143 seconds
+[0m18:37:26.056041 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"
+[0m18:37:26.058553 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON
+[0m18:37:26.062735 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"
+[0m18:37:26.066295 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"
+[0m18:37:26.066976 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON: create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYERSEASON
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT
+        "PLAYERID",
+  "TEAMID",
+  "SEASON",
+  "FILENAME",
+  "LOAD_TIMESTAMP",
+        NULL AS abc,
+        NULL AS xyz,
+        CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS _inserted_at_
+    FROM RAUNIT_T20_DBT.T20_RAW.PLAYERSEASON
+),
+
+deduped AS (
+    SELECT
+        PLAYERID,
+        TEAMID,
+        ANY_VALUE(abc) AS ABC,
+        ANY_VALUE(xyz) AS XYZ,
+        ANY_VALUE(SEASON) AS SEASON,
+        ANY_VALUE(FILENAME) AS FILENAME,
+        ANY_VALUE(LOAD_TIMESTAMP) AS LOAD_TIMESTAMP,
+        MAX(_inserted_at_) AS _inserted_at_
+    FROM source_data
+    GROUP BY PLAYERID, TEAMID
+)
+
+SELECT *
+FROM deduped
+
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"} */;
+[0m18:37:26.860444 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.793 seconds
+[0m18:37:26.866653 [debug] [Thread-1 (]: Applying DROP to: RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYERSEASON__dbt_tmp
+[0m18:37:26.868706 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"
+[0m18:37:26.869582 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON: drop view if exists RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYERSEASON__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"} */
+[0m18:37:26.996422 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.126 seconds
+[0m18:37:26.999754 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019213975950>]}
+[0m18:37:27.000352 [info ] [Thread-1 (]: 4 of 10 OK created sql incremental model T20_DATA_TRANSFORM.STG_RAW_PLAYERSEASON  [[32mSUCCESS 1[0m in 1.11s]
+[0m18:37:27.001251 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON
+[0m18:37:27.001575 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM
+[0m18:37:27.001954 [info ] [Thread-1 (]: 5 of 10 START sql incremental model T20_DATA_TRANSFORM.STG_RAW_TEAM ............ [RUN]
+[0m18:37:27.003972 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM)
+[0m18:37:27.004806 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM
+[0m18:37:27.024914 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"
+[0m18:37:27.026972 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM: describe table RAUNIT_T20_DBT.T20_RAW.TEAM
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"} */
+[0m18:37:27.170193 [debug] [Thread-1 (]: SQL status: SUCCESS 4 in 0.142 seconds
+[0m18:37:27.174091 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"
+[0m18:37:27.177389 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM
+[0m18:37:27.182743 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"
+[0m18:37:27.186776 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"
+[0m18:37:27.187510 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM: create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_TEAM
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT 
+        "TEAMID",
+  "TEAMNAME",
+  "FILENAME",
+  "LOAD_TIMESTAMP",
+        CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS _inserted_at_
+    FROM RAUNIT_T20_DBT.T20_RAW.TEAM
+),
+
+deduped AS (
+    SELECT
+        TEAMID,
+        ANY_VALUE(TEAMNAME) AS TEAMNAME,
+        ANY_VALUE(FILENAME) AS FILENAME,
+        ANY_VALUE(LOAD_TIMESTAMP) AS LOAD_TIMESTAMP,
+        MAX(_inserted_at_) AS _inserted_at_
+    FROM source_data
+    GROUP BY TEAMID
+)
+
+SELECT *
+FROM deduped
+
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"} */;
+[0m18:37:27.805248 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.617 seconds
+[0m18:37:27.809045 [debug] [Thread-1 (]: Applying DROP to: RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_TEAM__dbt_tmp
+[0m18:37:27.809533 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"
+[0m18:37:27.809761 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM: drop view if exists RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_TEAM__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"} */
+[0m18:37:27.932449 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.122 seconds
+[0m18:37:27.937108 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019213919320>]}
+[0m18:37:27.938649 [info ] [Thread-1 (]: 5 of 10 OK created sql incremental model T20_DATA_TRANSFORM.STG_RAW_TEAM ....... [[32mSUCCESS 1[0m in 0.93s]
+[0m18:37:27.941039 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM
+[0m18:37:27.942151 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model
+[0m18:37:27.943233 [info ] [Thread-1 (]: 6 of 10 START sql table model T20_DATA_TRANSFORM.my_first_dbt_model ............ [RUN]
+[0m18:37:27.945045 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM, now model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model)
+[0m18:37:27.945988 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model
+[0m18:37:27.952328 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model"
+[0m18:37:27.955795 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model
+[0m18:37:27.974813 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model"
+[0m18:37:27.981086 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model"
+[0m18:37:27.982119 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model: create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.my_first_dbt_model
+    
+    
+    
+    as (
+
+  with source_data as (
+      select 1 as id
+      union all
+      select null as id
+  )
+
+  select *
+  from source_data
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model"} */;
+[0m18:37:28.602622 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.620 seconds
+[0m18:37:28.606918 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001921398C5F0>]}
+[0m18:37:28.608458 [info ] [Thread-1 (]: 6 of 10 OK created sql table model T20_DATA_TRANSFORM.my_first_dbt_model ....... [[32mSUCCESS 1[0m in 0.66s]
+[0m18:37:28.610576 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model
+[0m18:37:28.611550 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS
+[0m18:37:28.613248 [info ] [Thread-1 (]: 7 of 10 START sql incremental model T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS .. [RUN]
+[0m18:37:28.615165 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model, now model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS)
+[0m18:37:28.616405 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS
+[0m18:37:28.630862 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS"
+[0m18:37:28.635888 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS
+[0m18:37:28.644088 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS"
+[0m18:37:28.660561 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS"
+[0m18:37:28.661359 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS: create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS
+    
+    
+    
+    as (
+
+WITH playerstats AS (
+    SELECT 
+        COALESCE(PS.SEASON::NUMBER, NULL) AS SEASON,
+        COALESCE(BA.MATCHID::NUMBER, NULL) AS MATCHID,
+        COALESCE(BA.INNINGID::NUMBER, NULL) AS INNING,
+        COALESCE(T.TEAMID::NUMBER, NULL) AS TEAMID,
+        COALESCE(T.TEAMNAME::VARCHAR, NULL) AS TEAMNAME,
+        COALESCE(P.PLAYERID::NUMBER, NULL) AS PLAYERID,
+        COALESCE(P.PLAYERNAME::VARCHAR, NULL) AS PLAYERNAME,
+        COALESCE(BA.PLAYORDER::NUMBER, NULL) AS PLAYERORDER,
+        COALESCE(BA.RUNS::NUMBER, NULL) AS RUNS_MADE,
+        COALESCE(BA.BALLS::NUMBER, NULL) AS BALLS_PLAYED,
+        COALESCE(BA.BOUNDERIES::NUMBER, NULL) AS FOURS_HITTEN,
+        COALESCE(BA.SIXES::NUMBER, NULL) AS SIXES_HITTEN,
+        COALESCE(BA.DOTSBALLS::NUMBER, NULL) AS DOTBALLS_PLAYED,
+        COALESCE(BO.BALLSBOWLED::NUMBER, NULL) AS BOWLS_BOWLED,
+        COALESCE(BO.MAIDENS::NUMBER, NULL) AS MAIDEN_TAKEN,
+        COALESCE(BO.DOTBALLS::NUMBER, NULL) AS DOTSBALLS_THROWN,
+        COALESCE(BO.RUNSGIVEN::NUMBER, NULL) AS RUNS_GIVEN,
+        COALESCE(BO.BOUNDERIESCONCEDED::NUMBER, NULL) AS BOUNDERIES_CONCEDED,
+        COALESCE(BO.SIXESCONCEDED::NUMBER, NULL) AS SIXES_CONCEDED,
+        COALESCE(BO.NOBALLS::NUMBER, NULL) AS NOBALLS_GIVEN,
+        COALESCE(BO.WIDES::NUMBER, NULL) AS WIDES_GIVEN,
+        COALESCE(BO.WICKETSTAKEN::NUMBER, NULL) AS WICKETS_TAKEN,
+        CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS INSERTED_AT
+    FROM RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYER AS P
+    LEFT JOIN RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYERSEASON AS PS ON P.PLAYERID = PS.PLAYERID
+    LEFT JOIN RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_TEAM AS T ON PS.TEAMID = T.TEAMID
+    LEFT JOIN RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BATTINGCARD AS BA ON P.PLAYERID = BA.BATSMANID
+    LEFT JOIN RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BOWLINGCARD AS BO 
+        ON P.PLAYERID = BO.BOWLERID 
+        AND BA.MATCHID = BO.MATCHID 
+        AND BA.INNINGID = BO.INNINGID
+
+    
+),
+deduped AS (
+    SELECT *,
+           ROW_NUMBER() OVER (
+               PARTITION BY SEASON, MATCHID, INNING, TEAMID, PLAYERID
+               ORDER BY INSERTED_AT DESC
+           ) AS rn
+    FROM playerstats
+)
+SELECT *
+FROM deduped
+WHERE rn = 1
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS"} */;
+[0m18:37:29.688569 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.026 seconds
+[0m18:37:29.694089 [debug] [Thread-1 (]: Applying DROP to: RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS__dbt_tmp
+[0m18:37:29.695846 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS"
+[0m18:37:29.696677 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS: drop view if exists RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS"} */
+[0m18:37:29.852094 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.155 seconds
+[0m18:37:29.856315 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192138D9AF0>]}
+[0m18:37:29.857701 [info ] [Thread-1 (]: 7 of 10 OK created sql incremental model T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS  [[32mSUCCESS 1[0m in 1.24s]
+[0m18:37:29.859711 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS
+[0m18:37:29.860637 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model
+[0m18:37:29.861607 [info ] [Thread-1 (]: 8 of 10 START sql view model T20_DATA_TRANSFORM.my_second_dbt_model ............ [RUN]
+[0m18:37:29.863480 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS, now model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model)
+[0m18:37:29.864317 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model
+[0m18:37:29.871322 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model"
+[0m18:37:29.875494 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model
+[0m18:37:29.903180 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model"
+[0m18:37:29.906068 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model"
+[0m18:37:29.906439 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model: create or replace   view RAUNIT_T20_DBT.T20_DATA_TRANSFORM.my_second_dbt_model
+  
+  
+  
+  
+  as (
+    select *
+  from RAUNIT_T20_DBT.T20_DATA_TRANSFORM.my_first_dbt_model
+  where id = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model"} */;
+[0m18:37:30.126062 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.219 seconds
+[0m18:37:30.129536 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192138DA930>]}
+[0m18:37:30.129940 [info ] [Thread-1 (]: 8 of 10 OK created sql view model T20_DATA_TRANSFORM.my_second_dbt_model ....... [[32mSUCCESS 1[0m in 0.27s]
+[0m18:37:30.131122 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model
+[0m18:37:30.131790 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON
+[0m18:37:30.132559 [info ] [Thread-1 (]: 9 of 10 START sql view model T20_DATA_TRANSFORM.PLAYERS_TEAMSESON .............. [RUN]
+[0m18:37:30.134021 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model, now model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON)
+[0m18:37:30.134710 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON
+[0m18:37:30.170462 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"
+[0m18:37:30.170896 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON: describe table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"} */
+[0m18:37:30.328909 [debug] [Thread-1 (]: SQL status: SUCCESS 24 in 0.158 seconds
+[0m18:37:30.335939 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"
+[0m18:37:30.336549 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON: describe table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.TeamSeason_9_11_25
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"} */
+[0m18:37:30.472360 [debug] [Thread-1 (]: SQL status: SUCCESS 2 in 0.135 seconds
+[0m18:37:30.486109 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"
+[0m18:37:30.488025 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON
+[0m18:37:30.490245 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"
+[0m18:37:30.494236 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"
+[0m18:37:30.494801 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON: create or replace   view RAUNIT_T20_DBT.T20_DATA_TRANSFORM.PLAYERS_TEAMSESON
+  
+  
+  
+  
+  as (
+    
+
+
+    
+
+        (
+            select
+                cast('RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS' as TEXT) as source_layer,
+
+                
+                    cast("SEASON" as NUMBER(38,0)) as "SEASON" ,
+                    cast("MATCHID" as NUMBER(38,0)) as "MATCHID" ,
+                    cast("INNING" as NUMBER(38,0)) as "INNING" ,
+                    cast("TEAMID" as NUMBER(38,0)) as "TEAMID" ,
+                    cast("TEAMNAME" as character varying(16777216)) as "TEAMNAME" ,
+                    cast("PLAYERID" as NUMBER(38,0)) as "PLAYERID" ,
+                    cast("PLAYERNAME" as character varying(16777216)) as "PLAYERNAME" ,
+                    cast("PLAYERORDER" as NUMBER(38,0)) as "PLAYERORDER" ,
+                    cast("RUNS_MADE" as NUMBER(38,0)) as "RUNS_MADE" ,
+                    cast("BALLS_PLAYED" as NUMBER(38,0)) as "BALLS_PLAYED" ,
+                    cast("FOURS_HITTEN" as NUMBER(38,0)) as "FOURS_HITTEN" ,
+                    cast("SIXES_HITTEN" as NUMBER(38,0)) as "SIXES_HITTEN" ,
+                    cast("DOTBALLS_PLAYED" as NUMBER(38,0)) as "DOTBALLS_PLAYED" ,
+                    cast("BOWLS_BOWLED" as NUMBER(38,0)) as "BOWLS_BOWLED" ,
+                    cast("MAIDEN_TAKEN" as NUMBER(38,0)) as "MAIDEN_TAKEN" ,
+                    cast("DOTSBALLS_THROWN" as NUMBER(38,0)) as "DOTSBALLS_THROWN" ,
+                    cast("RUNS_GIVEN" as NUMBER(38,0)) as "RUNS_GIVEN" ,
+                    cast("BOUNDERIES_CONCEDED" as NUMBER(38,0)) as "BOUNDERIES_CONCEDED" ,
+                    cast("SIXES_CONCEDED" as NUMBER(38,0)) as "SIXES_CONCEDED" ,
+                    cast("NOBALLS_GIVEN" as NUMBER(38,0)) as "NOBALLS_GIVEN" ,
+                    cast("WIDES_GIVEN" as NUMBER(38,0)) as "WIDES_GIVEN" ,
+                    cast("WICKETS_TAKEN" as NUMBER(38,0)) as "WICKETS_TAKEN" ,
+                    cast("INSERTED_AT" as TIMESTAMP_NTZ) as "INSERTED_AT" ,
+                    cast("RN" as NUMBER(18,0)) as "RN" 
+
+            from RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS
+
+            
+        )
+
+        union all
+        
+
+        (
+            select
+                cast('RAUNIT_T20_DBT.T20_DATA_TRANSFORM.TeamSeason_9_11_25' as TEXT) as source_layer,
+
+                
+                    cast("SEASON" as NUMBER(38,0)) as "SEASON" ,
+                    cast(null as NUMBER(38,0)) as "MATCHID" ,
+                    cast(null as NUMBER(38,0)) as "INNING" ,
+                    cast("TEAMID" as NUMBER(38,0)) as "TEAMID" ,
+                    cast(null as character varying(16777216)) as "TEAMNAME" ,
+                    cast(null as NUMBER(38,0)) as "PLAYERID" ,
+                    cast(null as character varying(16777216)) as "PLAYERNAME" ,
+                    cast(null as NUMBER(38,0)) as "PLAYERORDER" ,
+                    cast(null as NUMBER(38,0)) as "RUNS_MADE" ,
+                    cast(null as NUMBER(38,0)) as "BALLS_PLAYED" ,
+                    cast(null as NUMBER(38,0)) as "FOURS_HITTEN" ,
+                    cast(null as NUMBER(38,0)) as "SIXES_HITTEN" ,
+                    cast(null as NUMBER(38,0)) as "DOTBALLS_PLAYED" ,
+                    cast(null as NUMBER(38,0)) as "BOWLS_BOWLED" ,
+                    cast(null as NUMBER(38,0)) as "MAIDEN_TAKEN" ,
+                    cast(null as NUMBER(38,0)) as "DOTSBALLS_THROWN" ,
+                    cast(null as NUMBER(38,0)) as "RUNS_GIVEN" ,
+                    cast(null as NUMBER(38,0)) as "BOUNDERIES_CONCEDED" ,
+                    cast(null as NUMBER(38,0)) as "SIXES_CONCEDED" ,
+                    cast(null as NUMBER(38,0)) as "NOBALLS_GIVEN" ,
+                    cast(null as NUMBER(38,0)) as "WIDES_GIVEN" ,
+                    cast(null as NUMBER(38,0)) as "WICKETS_TAKEN" ,
+                    cast(null as TIMESTAMP_NTZ) as "INSERTED_AT" ,
+                    cast(null as NUMBER(18,0)) as "RN" 
+
+            from RAUNIT_T20_DBT.T20_DATA_TRANSFORM.TeamSeason_9_11_25
+
+            
+        )
+
+        
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"} */;
+[0m18:37:30.764651 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.269 seconds
+[0m18:37:30.767980 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001921398DDF0>]}
+[0m18:37:30.768966 [info ] [Thread-1 (]: 9 of 10 OK created sql view model T20_DATA_TRANSFORM.PLAYERS_TEAMSESON ......... [[32mSUCCESS 1[0m in 0.63s]
+[0m18:37:30.770570 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON
+[0m18:37:30.771232 [debug] [Thread-1 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES
+[0m18:37:30.771945 [info ] [Thread-1 (]: 10 of 10 START sql view model T20_DATA_TRANSFORM.PLAYER_SEASON_BOUNDERIES ...... [RUN]
+[0m18:37:30.773300 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON, now model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES)
+[0m18:37:30.773945 [debug] [Thread-1 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES
+[0m18:37:30.779272 [debug] [Thread-1 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES"
+[0m18:37:30.781781 [debug] [Thread-1 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES
+[0m18:37:30.784514 [debug] [Thread-1 (]: Writing runtime sql for node "model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES"
+[0m18:37:30.787331 [debug] [Thread-1 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES"
+[0m18:37:30.787856 [debug] [Thread-1 (]: On model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES: create or replace   view RAUNIT_T20_DBT.T20_DATA_TRANSFORM.PLAYER_SEASON_BOUNDERIES
+  
+  
+  
+  
+  as (
+    
+
+SELECT SEASON, TEAMNAME, PLAYERID, PLAYERNAME, 
+    SUM(COALESCE(SIXES_HITTEN, 0) + COALESCE(FOURS_HITTEN, 0))
+ AS BOUNDERIES FROM RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS GROUP BY SEASON, TEAMNAME, PLAYERID, PLAYERNAME
+  )
+/* {"app": "dbt", "dbt_version": "1.11.0b4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES"} */;
+[0m18:37:31.047891 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.259 seconds
+[0m18:37:31.051012 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e786782-92fd-4ca9-9b9d-f0a072acf42b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001921398EB70>]}
+[0m18:37:31.051402 [info ] [Thread-1 (]: 10 of 10 OK created sql view model T20_DATA_TRANSFORM.PLAYER_SEASON_BOUNDERIES . [[32mSUCCESS 1[0m in 0.28s]
+[0m18:37:31.052865 [debug] [Thread-1 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES
+[0m18:37:31.055798 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:37:31.056514 [debug] [MainThread]: Connection 'list_RAUNIT_T20_DBT' was left open.
+[0m18:37:31.057229 [debug] [MainThread]: On list_RAUNIT_T20_DBT: Close
+[0m18:37:31.295193 [debug] [MainThread]: Connection 'list_RAUNIT_T20_DBT_SNAPSHOTS' was left open.
+[0m18:37:31.296062 [debug] [MainThread]: On list_RAUNIT_T20_DBT_SNAPSHOTS: Close
+[0m18:37:31.545895 [debug] [MainThread]: Connection 'model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES' was left open.
+[0m18:37:31.546827 [debug] [MainThread]: On model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES: Close
+[0m18:37:31.793683 [info ] [MainThread]: 
+[0m18:37:31.795144 [info ] [MainThread]: Finished running 6 incremental models, 1 table model, 3 view models in 0 hours 0 minutes and 14.34 seconds (14.34s).
+[0m18:37:31.798810 [debug] [MainThread]: Command end result
+[0m18:37:31.837794 [debug] [MainThread]: Wrote artifact WritableManifest to C:\VS Code\DBT_TEST\target\manifest.json
+[0m18:37:31.840571 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\VS Code\DBT_TEST\target\semantic_manifest.json
+[0m18:37:31.846154 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\VS Code\DBT_TEST\target\run_results.json
+[0m18:37:31.846439 [info ] [MainThread]: 
+[0m18:37:31.847297 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:37:31.848006 [info ] [MainThread]: 
+[0m18:37:31.848580 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=10
+[0m18:37:31.849587 [debug] [MainThread]: Command `dbt run` succeeded at 18:37:31.849476 after 16.49 seconds
+[0m18:37:31.849909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019213774290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019271BD2D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001921398E7B0>]}
+[0m18:37:31.850196 [debug] [MainThread]: Flushing usage events
+[0m18:37:34.340601 [debug] [MainThread]: An error was encountered while trying to flush usage events
