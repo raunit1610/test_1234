@@ -986,3 +986,36 @@ There are 1 unused configuration paths:
 [0m17:46:45.757425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C628D07C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C60E3704D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6289C1CD0>]}
 [0m17:46:45.757667 [debug] [MainThread]: Flushing usage events
 [0m17:46:47.859010 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:03:26.853111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB482CD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB52D56D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB593FED0>]}
+
+
+============================== 18:03:26.861070 | 1b6068e5-9bdf-4b62-9a83-4f298a1f07a3 ==============================
+[0m18:03:26.861070 [info ] [MainThread]: Running with dbt=1.11.0-b4
+[0m18:03:26.862605 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\VS Code\\DBT_TEST', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'False', 'quiet': 'False', 'log_format': 'default', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'C:\\VS Code\\DBT_TEST\\logs', 'introspect': 'True', 'no_print': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt compile', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'use_experimental_parser': 'False'}
+[0m18:03:27.510759 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:03:27.511155 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:03:27.511652 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:03:27.644989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1b6068e5-9bdf-4b62-9a83-4f298a1f07a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB4C95CD0>]}
+[0m18:03:27.687843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1b6068e5-9bdf-4b62-9a83-4f298a1f07a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BACFD5CF30>]}
+[0m18:03:27.688920 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m18:03:27.940456 [debug] [MainThread]: checksum: 57e51233fb2305050a86c940b93938a4d3a51a7b95f45f76840a20ffa12695aa, vars: {}, profile: , target: , version: 1.11.0b4
+[0m18:03:28.007460 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:03:28.007771 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:03:28.008208 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_proj_test_1.example
+[0m18:03:28.012098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1b6068e5-9bdf-4b62-9a83-4f298a1f07a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAD011F550>]}
+[0m18:03:28.047104 [debug] [MainThread]: Wrote artifact WritableManifest to C:\VS Code\DBT_TEST\target\manifest.json
+[0m18:03:28.049816 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\VS Code\DBT_TEST\target\semantic_manifest.json
+[0m18:03:28.067337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1b6068e5-9bdf-4b62-9a83-4f298a1f07a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BACFED89B0>]}
+[0m18:03:28.067747 [info ] [MainThread]: Found 494 macros
+[0m18:03:28.068562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1b6068e5-9bdf-4b62-9a83-4f298a1f07a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAD0141EF0>]}
+[0m18:03:28.069649 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m18:03:28.071464 [debug] [MainThread]: Command end result
+[0m18:03:28.085938 [debug] [MainThread]: Wrote artifact WritableManifest to C:\VS Code\DBT_TEST\target\manifest.json
+[0m18:03:28.088581 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\VS Code\DBT_TEST\target\semantic_manifest.json
+[0m18:03:28.091852 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\VS Code\DBT_TEST\target\run_results.json
+[0m18:03:28.092570 [debug] [MainThread]: Command `dbt compile` succeeded at 18:03:28.092467 after 1.96 seconds
+[0m18:03:28.092853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAD02B7D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAB59344D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BACFF6D310>]}
+[0m18:03:28.093104 [debug] [MainThread]: Flushing usage events
+[0m18:03:29.980706 [debug] [MainThread]: An error was encountered while trying to flush usage events
