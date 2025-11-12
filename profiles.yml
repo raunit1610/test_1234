@@ -1,4 +1,4 @@
-dbt_proj_test_1:
+T20_DBT_PROJECT_TESTING_1:
   target: dev
   outputs:
     dev:
