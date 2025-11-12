@@ -10,6 +10,7 @@ WITH source_data AS (
     SELECT
         {{ dbt_utils.star(from=source('t20_database', 'playerseason')) }},
         NULL AS abc,
+        NULL AS xyz,
         CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS _inserted_at_
     FROM {{ source('t20_database', 'playerseason') }}
 ),
@@ -19,6 +20,7 @@ deduped AS (
         PLAYERID,
         TEAMID,
         ANY_VALUE(abc),
+        ANY_VALUE(xyz),
         ANY_VALUE(SEASON) AS SEASON,
         ANY_VALUE(FILENAME) AS FILENAME,
         ANY_VALUE(LOAD_TIMESTAMP) AS LOAD_TIMESTAMP,
