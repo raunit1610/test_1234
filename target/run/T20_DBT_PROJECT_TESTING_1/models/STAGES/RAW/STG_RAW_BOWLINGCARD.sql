@@ -1,0 +1,39 @@
+
+  
+    
+
+create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_BOWLINGCARD
+    
+    
+    
+    as (
+
+WITH source_data AS (
+    SELECT 
+        "MATCHID",
+  "INNINGID",
+  "BOWLERID",
+  "BALLSBOWLED",
+  "MAIDENS",
+  "DOTBALLS",
+  "RUNSGIVEN",
+  "BOUNDERIESCONCEDED",
+  "SIXESCONCEDED",
+  "NOBALLS",
+  "WIDES",
+  "WICKETSTAKEN",
+  "FILENAME",
+  "LOAD_TIMESTAMP",
+        CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS _inserted_at_
+    FROM RAUNIT_T20_DBT.T20_RAW.BOWLINGSCORECARD
+)
+
+SELECT *
+FROM source_data
+
+
+    )
+;
+
+
+  
