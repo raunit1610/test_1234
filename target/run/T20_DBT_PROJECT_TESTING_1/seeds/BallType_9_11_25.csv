@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "RAUNIT_T20_DBT"."T20_DATA_TRANSFORM"."BALLTYPE_9_11_25";
+    -- dbt seed --
+    
+            insert into RAUNIT_T20_DBT.T20_DATA_TRANSFORM.BallType_9_11_25 (BallTypeID, BallType) values
+            (%s,%s),(%s,%s),(%s,%s)
+        
+
+;
+  

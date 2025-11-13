@@ -1,38 +1,9 @@
-
-  
-    
-
-create or replace transient table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYER
-    
-    
-    
-    as (
-
-WITH source_data AS (
-    SELECT
-        "PLAYERID",
-  "PLAYERNAME",
-  "FILENAME",
-  "LOAD_TIMESTAMP",
-        CONVERT_TIMEZONE('UTC', CURRENT_TIMESTAMP())::TIMESTAMP_NTZ AS _inserted_at_
-    FROM RAUNIT_T20_DBT.T20_RAW.PLAYER
-),
-
-deduped AS (
-    SELECT
-        PLAYERID,
-        ANY_VALUE(PLAYERNAME) AS PLAYERNAME,
-        ANY_VALUE(FILENAME) AS FILENAME,
-        ANY_VALUE(LOAD_TIMESTAMP) AS LOAD_TIMESTAMP,
-        MAX(_inserted_at_) AS _inserted_at_
-    FROM source_data
-    GROUP BY PLAYERID
-)
-
-SELECT *
-FROM deduped
+begin;
+    insert into RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYER ("PLAYERID", "PLAYERNAME", "FILENAME", "LOAD_TIMESTAMP", "_INSERTED_AT_")
+    (
+        select "PLAYERID", "PLAYERNAME", "FILENAME", "LOAD_TIMESTAMP", "_INSERTED_AT_"
+        from RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_RAW_PLAYER__dbt_tmp
     )
+
 ;
-
-
-  
+    commit;

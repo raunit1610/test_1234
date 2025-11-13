@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "RAUNIT_T20_DBT"."T20_DATA_TRANSFORM"."SCORINGTYPE_9_11_25";
+    -- dbt seed --
+    
+            insert into RAUNIT_T20_DBT.T20_DATA_TRANSFORM.ScoringType_9_11_25 (ScoringTypeID, ScoringType, ScoreAggregationType) values
+            (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+        
+
+;
+  
