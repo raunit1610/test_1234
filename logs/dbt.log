@@ -3015,3 +3015,227 @@ There are 1 unused configuration paths:
 [0m14:59:50.646439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013640DA84D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001365BF260A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001365BF26360>]}
 [0m14:59:50.646735 [debug] [MainThread]: Flushing usage events
 [0m14:59:52.040411 [debug] [MainThread]: An error was encountered while trying to flush usage events
+
+
+============================== 03:36:04.923464 | 3b1b3f89-4069-4be7-b950-2a1708dec54b ==============================
+[0m03:36:04.923464 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:36:04.924691 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/tmp/dbt/', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': '/tmp/dbt/target/', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m03:36:05.294383 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m03:36:06.636983 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m03:36:06.894180 [info ] [Dummy-1   ]: Unable to do partial parsing because of a version mismatch
+[0m03:36:09.535176 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_proj_test_1.example
+[0m03:36:09.673177 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:36:09.676774 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:36:09.728914 [info ] [Dummy-1   ]: Found 14 models, 1 snapshot, 4 seeds, 9 sources, 613 macros
+[0m03:36:09.732823 [info ] [Dummy-1   ]: 
+[0m03:36:09.734532 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m03:36:09.735240 [info ] [Dummy-1   ]: 
+[0m03:36:09.736223 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m03:36:09.744274 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM'
+[0m03:36:09.950888 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM"
+[0m03:36:09.951585 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m03:36:09.952352 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:36:10.396270 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.444 seconds
+[0m03:36:10.401455 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM"
+[0m03:36:10.402252 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM"} */
+show objects in RAUNIT_T20_DBT.T20_DATA_TRANSFORM
+    limit 10000
+    
+;
+[0m03:36:10.509229 [debug] [ThreadPool]: SQL status: SUCCESS 15 in 0.105 seconds
+[0m03:36:10.512580 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM"
+[0m03:36:10.513335 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m03:36:10.559995 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.046 seconds
+[0m03:36:10.563276 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_RAUNIT_T20_DBT_T20_DATA_TRANSFORM, now list_RAUNIT_T20_DBT_SNAPSHOTS)
+[0m03:36:10.578074 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT_SNAPSHOTS"
+[0m03:36:10.578953 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT_SNAPSHOTS: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT_SNAPSHOTS"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m03:36:10.580616 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:36:10.943205 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.363 seconds
+[0m03:36:10.946087 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT_SNAPSHOTS"
+[0m03:36:10.946766 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT_SNAPSHOTS: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT_SNAPSHOTS"} */
+show objects in RAUNIT_T20_DBT.SNAPSHOTS
+    limit 10000
+    
+;
+[0m03:36:11.021143 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.074 seconds
+[0m03:36:11.024201 [debug] [ThreadPool]: Using snowflake connection "list_RAUNIT_T20_DBT_SNAPSHOTS"
+[0m03:36:11.024866 [debug] [ThreadPool]: On list_RAUNIT_T20_DBT_SNAPSHOTS: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "connection_name": "list_RAUNIT_T20_DBT_SNAPSHOTS"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m03:36:11.080748 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.055 seconds
+[0m03:36:11.093175 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD
+[0m03:36:11.094082 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_RAUNIT_T20_DBT_SNAPSHOTS, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD)
+[0m03:36:11.095852 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD
+[0m03:36:11.128942 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"
+[0m03:36:11.132175 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"} */
+describe table RAUNIT_T20_DBT.T20_RAW.BATTINGSCORECARD
+[0m03:36:11.135331 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:11.577044 [debug] [Thread-2 (]: SQL status: SUCCESS 14 in 0.440 seconds
+[0m03:36:11.584587 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD"
+[0m03:36:11.585749 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD
+[0m03:36:11.586751 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD
+[0m03:36:11.588558 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD
+[0m03:36:11.589504 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BATTINGCARD, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD)
+[0m03:36:11.590228 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD
+[0m03:36:11.604578 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"
+[0m03:36:11.607834 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"} */
+describe table RAUNIT_T20_DBT.T20_RAW.BOWLINGSCORECARD
+[0m03:36:11.611201 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:12.007874 [debug] [Thread-2 (]: SQL status: SUCCESS 14 in 0.396 seconds
+[0m03:36:12.012491 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD"
+[0m03:36:12.013622 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD
+[0m03:36:12.015633 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD
+[0m03:36:12.016436 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER
+[0m03:36:12.017390 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_BOWLINGCARD, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER)
+[0m03:36:12.019112 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER
+[0m03:36:12.032192 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"
+[0m03:36:12.035323 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"} */
+describe table RAUNIT_T20_DBT.T20_RAW.PLAYER
+[0m03:36:12.038611 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:12.634662 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.596 seconds
+[0m03:36:12.638662 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER"
+[0m03:36:12.639746 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER
+[0m03:36:12.640719 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER
+[0m03:36:12.642576 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2
+[0m03:36:12.643528 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2)
+[0m03:36:12.644199 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2
+[0m03:36:12.655600 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2"
+[0m03:36:12.658703 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2"} */
+describe table RAUNIT_T20_DBT.T20_RAW.PLAYER
+[0m03:36:12.661912 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:13.057493 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.395 seconds
+[0m03:36:13.061399 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2"
+[0m03:36:13.062447 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2
+[0m03:36:13.063338 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2
+[0m03:36:13.065092 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3
+[0m03:36:13.066029 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER2, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3)
+[0m03:36:13.066680 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3
+[0m03:36:13.079249 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3"
+[0m03:36:13.082235 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3"} */
+describe table RAUNIT_T20_DBT.T20_RAW.PLAYER
+[0m03:36:13.085484 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:13.599910 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.513 seconds
+[0m03:36:13.603940 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3"
+[0m03:36:13.604968 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3
+[0m03:36:13.605890 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3
+[0m03:36:13.607685 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON
+[0m03:36:13.608571 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYER3, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON)
+[0m03:36:13.609238 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON
+[0m03:36:13.621131 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"
+[0m03:36:13.624329 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"} */
+describe table RAUNIT_T20_DBT.T20_RAW.PLAYERSEASON
+[0m03:36:13.627563 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:14.030689 [debug] [Thread-2 (]: SQL status: SUCCESS 5 in 0.402 seconds
+[0m03:36:14.035053 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON"
+[0m03:36:14.036134 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON
+[0m03:36:14.038107 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON
+[0m03:36:14.038911 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM
+[0m03:36:14.039835 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_PLAYERSEASON, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM)
+[0m03:36:14.040519 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM
+[0m03:36:14.055134 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"
+[0m03:36:14.058292 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"} */
+describe table RAUNIT_T20_DBT.T20_RAW.TEAM
+[0m03:36:14.061531 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:14.892219 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.830 seconds
+[0m03:36:14.896500 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM"
+[0m03:36:14.897580 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM
+[0m03:36:14.899548 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM
+[0m03:36:14.900335 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2
+[0m03:36:14.901560 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2)
+[0m03:36:14.902276 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2
+[0m03:36:14.915372 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2"
+[0m03:36:14.917374 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2"} */
+describe table RAUNIT_T20_DBT.T20_RAW.TEAM
+[0m03:36:14.920621 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:15.315315 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.393 seconds
+[0m03:36:15.319501 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2"
+[0m03:36:15.320554 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2
+[0m03:36:15.321495 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2
+[0m03:36:15.323334 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3
+[0m03:36:15.324478 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM2, now model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3)
+[0m03:36:15.325252 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3
+[0m03:36:15.342096 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3"
+[0m03:36:15.344294 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3"} */
+describe table RAUNIT_T20_DBT.T20_RAW.TEAM
+[0m03:36:15.347550 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:15.736387 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.388 seconds
+[0m03:36:15.740541 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3"
+[0m03:36:15.742661 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3
+[0m03:36:15.743615 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3
+[0m03:36:15.744359 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model
+[0m03:36:15.746319 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_RAW_TEAM3, now model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model)
+[0m03:36:15.747026 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model
+[0m03:36:15.753738 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model"
+[0m03:36:15.754859 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model
+[0m03:36:15.755804 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model
+[0m03:36:15.757627 [debug] [Thread-2 (]: Began running node seed.T20_DBT_PROJECT_TESTING_1.BallType_9_11_25
+[0m03:36:15.758866 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.my_first_dbt_model, now seed.T20_DBT_PROJECT_TESTING_1.BallType_9_11_25)
+[0m03:36:15.759575 [debug] [Thread-2 (]: Began compiling node seed.T20_DBT_PROJECT_TESTING_1.BallType_9_11_25
+[0m03:36:15.764972 [debug] [Thread-2 (]: Began executing node seed.T20_DBT_PROJECT_TESTING_1.BallType_9_11_25
+[0m03:36:15.765969 [debug] [Thread-2 (]: Finished running node seed.T20_DBT_PROJECT_TESTING_1.BallType_9_11_25
+[0m03:36:15.766763 [debug] [Thread-2 (]: Began running node seed.T20_DBT_PROJECT_TESTING_1.DismissalType_9_11_25
+[0m03:36:15.768897 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.T20_DBT_PROJECT_TESTING_1.BallType_9_11_25, now seed.T20_DBT_PROJECT_TESTING_1.DismissalType_9_11_25)
+[0m03:36:15.769617 [debug] [Thread-2 (]: Began compiling node seed.T20_DBT_PROJECT_TESTING_1.DismissalType_9_11_25
+[0m03:36:15.777240 [debug] [Thread-2 (]: Began executing node seed.T20_DBT_PROJECT_TESTING_1.DismissalType_9_11_25
+[0m03:36:15.778262 [debug] [Thread-2 (]: Finished running node seed.T20_DBT_PROJECT_TESTING_1.DismissalType_9_11_25
+[0m03:36:15.779092 [debug] [Thread-2 (]: Began running node seed.T20_DBT_PROJECT_TESTING_1.ScoringType_9_11_25
+[0m03:36:15.781139 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.T20_DBT_PROJECT_TESTING_1.DismissalType_9_11_25, now seed.T20_DBT_PROJECT_TESTING_1.ScoringType_9_11_25)
+[0m03:36:15.781886 [debug] [Thread-2 (]: Began compiling node seed.T20_DBT_PROJECT_TESTING_1.ScoringType_9_11_25
+[0m03:36:15.786320 [debug] [Thread-2 (]: Began executing node seed.T20_DBT_PROJECT_TESTING_1.ScoringType_9_11_25
+[0m03:36:15.788397 [debug] [Thread-2 (]: Finished running node seed.T20_DBT_PROJECT_TESTING_1.ScoringType_9_11_25
+[0m03:36:15.789240 [debug] [Thread-2 (]: Began running node seed.T20_DBT_PROJECT_TESTING_1.TeamSeason_9_11_25
+[0m03:36:15.790264 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.T20_DBT_PROJECT_TESTING_1.ScoringType_9_11_25, now seed.T20_DBT_PROJECT_TESTING_1.TeamSeason_9_11_25)
+[0m03:36:15.792066 [debug] [Thread-2 (]: Began compiling node seed.T20_DBT_PROJECT_TESTING_1.TeamSeason_9_11_25
+[0m03:36:15.796515 [debug] [Thread-2 (]: Began executing node seed.T20_DBT_PROJECT_TESTING_1.TeamSeason_9_11_25
+[0m03:36:15.797575 [debug] [Thread-2 (]: Finished running node seed.T20_DBT_PROJECT_TESTING_1.TeamSeason_9_11_25
+[0m03:36:15.798425 [debug] [Thread-2 (]: Began running node snapshot.T20_DBT_PROJECT_TESTING_1.raw_player_scd2
+[0m03:36:15.800493 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.T20_DBT_PROJECT_TESTING_1.TeamSeason_9_11_25, now snapshot.T20_DBT_PROJECT_TESTING_1.raw_player_scd2)
+[0m03:36:15.801257 [debug] [Thread-2 (]: Began compiling node snapshot.T20_DBT_PROJECT_TESTING_1.raw_player_scd2
+[0m03:36:15.808135 [debug] [Thread-2 (]: Began executing node snapshot.T20_DBT_PROJECT_TESTING_1.raw_player_scd2
+[0m03:36:15.809200 [debug] [Thread-2 (]: Finished running node snapshot.T20_DBT_PROJECT_TESTING_1.raw_player_scd2
+[0m03:36:15.811040 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS
+[0m03:36:15.812100 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly snapshot.T20_DBT_PROJECT_TESTING_1.raw_player_scd2, now model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS)
+[0m03:36:15.812889 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS
+[0m03:36:15.824254 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS"
+[0m03:36:15.826471 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS
+[0m03:36:15.827536 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS
+[0m03:36:15.828417 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model
+[0m03:36:15.831007 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.STG_BRONZE_PLAYERSTATS, now model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model)
+[0m03:36:15.831886 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model
+[0m03:36:15.838178 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model"
+[0m03:36:15.839379 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model
+[0m03:36:15.840378 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model
+[0m03:36:15.842328 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON
+[0m03:36:15.843417 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.my_second_dbt_model, now model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON)
+[0m03:36:15.844176 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON
+[0m03:36:15.855176 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"
+[0m03:36:15.856263 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"} */
+describe table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.STG_BRONZE_PLAYERSTATS
+[0m03:36:15.858367 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m03:36:16.865834 [debug] [Thread-2 (]: SQL status: SUCCESS 24 in 1.008 seconds
+[0m03:36:16.878452 [debug] [Thread-2 (]: Using snowflake connection "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"
+[0m03:36:16.880467 [debug] [Thread-2 (]: On model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "T20_DBT_PROJECT_TESTING_1", "target_name": "dev", "node_id": "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"} */
+describe table RAUNIT_T20_DBT.T20_DATA_TRANSFORM.TeamSeason_9_11_25
+[0m03:36:16.939179 [debug] [Thread-2 (]: SQL status: SUCCESS 2 in 0.058 seconds
+[0m03:36:16.948041 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON"
+[0m03:36:16.950210 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON
+[0m03:36:16.951150 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON
+[0m03:36:16.951949 [debug] [Thread-2 (]: Began running node model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES
+[0m03:36:16.953889 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.T20_DBT_PROJECT_TESTING_1.PLAYERS_TEAMSESON, now model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES)
+[0m03:36:16.954566 [debug] [Thread-2 (]: Began compiling node model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES
+[0m03:36:16.959715 [debug] [Thread-2 (]: Writing injected SQL for node "model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES"
+[0m03:36:16.961703 [debug] [Thread-2 (]: Began executing node model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES
+[0m03:36:16.962610 [debug] [Thread-2 (]: Finished running node model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES
+[0m03:36:16.966520 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m03:36:16.967303 [debug] [Dummy-1   ]: Connection 'model.T20_DBT_PROJECT_TESTING_1.PLAYER_SEASON_BOUNDERIES' was properly closed.
+[0m03:36:16.970891 [debug] [Dummy-1   ]: Command end result
+[0m03:36:17.013474 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:36:17.017052 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:36:17.026975 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m03:36:17.030473 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 12.199617, "process_in_blocks": "0", "process_kernel_time": 1.19, "process_mem_max_rss": "497472", "process_out_blocks": "0", "process_user_time": 10.44}
+[0m03:36:17.031265 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 03:36:17.030987 after 12.20 seconds
+[0m03:36:17.031922 [debug] [Dummy-1   ]: Flushing usage events

@@ -11,4 +11,4 @@ WITH source_data AS (
     FROM {{ source('t20_database', 'teams') }}
 )
 
-select * from source_data;
+select * from source_data
