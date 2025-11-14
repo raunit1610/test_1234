@@ -10,4 +10,4 @@ WITH source_data AS (
     FROM RAUNIT_T20_DBT.T20_RAW.TEAM
 )
 
-select * from source_data;
+select * from source_data
